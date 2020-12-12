@@ -9,9 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let photoViewModel = PhotoViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        photoViewModel.getPhotos()
     }
 }
 

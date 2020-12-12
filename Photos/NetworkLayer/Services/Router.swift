@@ -21,9 +21,9 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
     private var task: URLSessionTask!
     private var environmentBaseURL: URL {
         switch environment {
-        case .production: return URL(string: "https://my-json-server.typicode.com/Wei789/demo/")!
-        case .qa: return URL(string: "https://my-json-server.typicode.com/Wei789/demo/")!
-        case .staging: return URL(string: "https://my-json-server.typicode.com/Wei789/demo/")!
+        case .production: return URL(string: "https://jsonplaceholder.typicode.com/")!
+        case .qa: return URL(string: "")!
+        case .staging: return URL(string: "")!
         }
     }
     

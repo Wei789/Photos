@@ -14,7 +14,6 @@
 		35E2B0A2258482210061560E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E2B0A1258482210061560E /* Assets.xcassets */; };
 		35E2B0A5258482210061560E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E2B0A3258482210061560E /* LaunchScreen.storyboard */; };
 		35E2B0C2258482DD0061560E /* StoreEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0B7258482DD0061560E /* StoreEndPoint.swift */; };
-		35E2B0C3258482DD0061560E /* LoginEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0B8258482DD0061560E /* LoginEndPoint.swift */; };
 		35E2B0C4258482DD0061560E /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0BA258482DD0061560E /* HTTPTask.swift */; };
 		35E2B0C5258482DD0061560E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0BB258482DD0061560E /* HTTPMethod.swift */; };
 		35E2B0C6258482DD0061560E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0BC258482DD0061560E /* Router.swift */; };
@@ -22,6 +21,8 @@
 		35E2B0C8258482DD0061560E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0BF258482DD0061560E /* ParameterEncoding.swift */; };
 		35E2B0C9258482DD0061560E /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0C0258482DD0061560E /* URLParameterEncoder.swift */; };
 		35E2B0CA258482DD0061560E /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0C1258482DD0061560E /* JSONParameterEncoder.swift */; };
+		35E2B0CE258483C20061560E /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0CD258483C20061560E /* PhotoViewModel.swift */; };
+		35E2B0D2258483FF0061560E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2B0D1258483FF0061560E /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,6 @@
 		35E2B0A4258482210061560E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35E2B0A6258482210061560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35E2B0B7258482DD0061560E /* StoreEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreEndPoint.swift; sourceTree = "<group>"; };
-		35E2B0B8258482DD0061560E /* LoginEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEndPoint.swift; sourceTree = "<group>"; };
 		35E2B0BA258482DD0061560E /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		35E2B0BB258482DD0061560E /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		35E2B0BC258482DD0061560E /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		35E2B0BF258482DD0061560E /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		35E2B0C0258482DD0061560E /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		35E2B0C1258482DD0061560E /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		35E2B0CD258483C20061560E /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		35E2B0D1258483FF0061560E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				35E2B0B0258482890061560E /* View */,
 				35E2B0B2258482920061560E /* Controller */,
 				35E2B0B5258482B90061560E /* ViewModel */,
+				35E2B0D0258483F00061560E /* Model */,
 				35E2B0B4258482A10061560E /* NetworkLayer */,
 				35E2B0AF258482650061560E /* Supporting Files */,
 			);
@@ -124,6 +127,7 @@
 		35E2B0B5258482B90061560E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				35E2B0CD258483C20061560E /* PhotoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				35E2B0B7258482DD0061560E /* StoreEndPoint.swift */,
-				35E2B0B8258482DD0061560E /* LoginEndPoint.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -156,6 +159,14 @@
 				35E2B0C1258482DD0061560E /* JSONParameterEncoder.swift */,
 			);
 			path = Encoding;
+			sourceTree = "<group>";
+		};
+		35E2B0D0258483F00061560E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35E2B0D1258483FF0061560E /* Photo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,13 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				35E2B0C6258482DD0061560E /* Router.swift in Sources */,
+				35E2B0CE258483C20061560E /* PhotoViewModel.swift in Sources */,
 				35E2B0C9258482DD0061560E /* URLParameterEncoder.swift in Sources */,
 				35E2B0C4258482DD0061560E /* HTTPTask.swift in Sources */,
 				35E2B0C8258482DD0061560E /* ParameterEncoding.swift in Sources */,
 				35E2B0C7258482DD0061560E /* EndPointType.swift in Sources */,
+				35E2B0D2258483FF0061560E /* Photo.swift in Sources */,
 				35E2B0C2258482DD0061560E /* StoreEndPoint.swift in Sources */,
 				35E2B0C5258482DD0061560E /* HTTPMethod.swift in Sources */,
-				35E2B0C3258482DD0061560E /* LoginEndPoint.swift in Sources */,
 				35E2B0CA258482DD0061560E /* JSONParameterEncoder.swift in Sources */,
 				35E2B09D2584821E0061560E /* ViewController.swift in Sources */,
 				35E2B0992584821E0061560E /* AppDelegate.swift in Sources */,

@@ -9,39 +9,34 @@
 import Foundation
 
 
-public enum StoreAPI {
-    case getStores
-    case getStore(id: String)
+public enum PhotoAPI {
+    case getPhotos
 }
 
-extension StoreAPI: EndPointType {
-  var baseURL: URL? {
-    return nil
-  }
-  
-  var path: String {
-    switch self {
-    case .getStores:
-        return "result1"
-    case .getStore:
-        return "result2"
+extension PhotoAPI: EndPointType {
+    var baseURL: URL? {
+        return nil
     }
-  }
-  
-  var httpMethod: HTTPMethod {
-    return .get
-  }
-  
-  var task: HTTPTask {
-    switch self {
-    case .getStores:
-      return .request
-    case .getStore(let id):
-        return .requestParameters(bodyParameters: nil, urlParameters: ["id": id])
+    
+    var path: String {
+        switch self {
+        case .getPhotos:
+            return "photos"
+        }
     }
-  }
-  
-  var headers: HTTPHeaders? {
-    return nil
-  }
+    
+    var httpMethod: HTTPMethod {
+        return .get
+    }
+    
+    var task: HTTPTask {
+        switch self {
+        case .getPhotos:
+            return .request
+        }
+    }
+    
+    var headers: HTTPHeaders? {
+        return nil
+    }
 }
