@@ -13,6 +13,7 @@ class PhotoViewModel {
     var getPhotosSuccess: (() -> ())?
     var getPhotosFail: ((_ error: String) -> ())?
     
+    var searchPhotos: [Photo] = []
     var photos: [Photo] = [] {
         didSet {
             getPhotosSuccess?()
